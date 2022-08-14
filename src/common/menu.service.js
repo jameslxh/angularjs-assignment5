@@ -18,7 +18,7 @@ function MenuService($http, ApiPath) {
   service.getUser = function() {
     return service.user;
   }
-
+  
   service.getCategories = function () {
     return $http.get(ApiPath + '/categories.json').then(function (response) {
       return response.data;
